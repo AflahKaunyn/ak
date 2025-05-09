@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flower Gallery</title>
+  <style>
+    /* Base setup */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff0f4;
+    }
+
+    /* Flex layout to push footer down */
+    .page-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .container {
+      flex: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #ffd6e8;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #333;
+    }
+
+    .header p {
+      color: #c2185b;
+      font-weight: 500;
+    }
+
+    /* Flower grid */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+
+    .card img {
+      width: 100%;
+      height: 500px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    .card h2 {
+      margin: 0.75rem 0 0.5rem;
+      color: #d81b60;
+    }
+
+    .card p {
+      margin: 0 1rem;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ffd6e8;
+      color: #333;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <div class="container">
+
+      <header class="header">
+        <h1>🌸 Flower Gallery 🌸</h1>
+        <p>Explore the beauty and meaning of flowers</p>
+      </header>
+
+      <main class="gallery">
+        <div class="card">
+            <img src="orchid.jpg" alt="Orchid" />
+            <h2>Orchid</h2>
+            <p>Represents beauty, luxury, and strength. A delicate exotic flower.</p>
+        </div>
+
+        <div class="card">
+            <img src="rose.jpg" alt="Rose" />
+            <h2>Rose</h2>
+            <p>The universal symbol of love and romance. Comes in many colors.</p>
+        </div>
+
+        <div class="card">
+            <img src="Spirea.jpg" alt="Spirea" />
+            <h2>Spirea</h2>
+            <p>Represents victory and elegance. Produces clusters of white or pink flowers.</p>
+        </div>
+
+        <div class="card">
+            <img src="aster.jpg" alt="Aster" />
+            <h2>Aster</h2>
+            <p>Symbolizes patience, elegance, and daintiness. A September birth flower.</p>
+        </div>
+        <div class="card">
+            <img src="blossom.jpg" alt="Blossom" />
+            <h2>Blossom</h2>
+            <p>General term for blooming flowers like cherry blossoms, symbolizing renewal.</p>
+        </div>
+
+        <div class="card">
+            <img src="tulip.jpg" alt="Tulip" />
+            <h2>Tulip</h2>
+            <p>Sign of perfect love and comfort. Popular in spring bouquets.</p>
+        </div>
+
+        <div class="card">
+            <img src="daffodils.jpg" alt="Daffodil" />
+            <h2>Daffodil</h2>
+            <p>Represents new beginnings and hope. A March birth flower.</p>
+        </div>
+
+        <div class="card">
+            <img src="daisy.jpg" alt="Daisy" />
+            <h2>Daisy</h2>
+            <p>Stands for innocence and purity. An April birth flower.</p>
+        </div>
+
+        <div class="card"><img src="Buttercup.jpg" alt="Buttercup" />
+            <h2>Buttercup</h2>
+            <p>Represents cheerfulness and childishness. Known for bright yellow petals.</p>
+        </div>
+
+        <div class="card"><img src="carnation.jpg" alt="Carnation" />
+            <h2>Carnation</h2>
+            <p>Stands for love and fascination. A popular Mother's Day flower.</p>
+        </div>
+
+        <div class="card"><img src="cornflower.jpg" alt="Cornflower" />
+            <h2>Cornflower</h2>
+            <p>Symbolizes hope in love and delicacy. Has bright blue petals.</p>
+                </div>
+
+        <div class="card">
+            <img src="jasmine.jpg" alt="Jasmine" />
+            <h2>Jasmine</h2>
+            <p>Symbolizes sensuality and purity. Often used in perfumes and teas.</p>
+        </div>
+
+        <div class="card">
+            <img src="lavender.jpg" alt="Lavender" />
+            <h2>Lavender</h2>
+            <p>Known for its calming scent. Represents grace and peace.</p>
+        </div>
+
+        <div class="card">
+            <img src="lilly.jpg" alt="Lily" />
+            <h2>Lily</h2>
+            <p>Symbolizes purity and devotion. Often used in religious contexts.</p>
+        </div>
+
+        <div class="card">
+            <img src="lotus.jpg" alt="Lotus" />
+            <h2>Lotus</h2>
+            <p>Sign of spiritual enlightenment and rebirth. Sacred in many cultures.</p>
+        </div>
+
+        <div class="card">
+            <img src="sunflower.jpg" alt="Sunflower" />
+            <h2>Sunflower</h2>
+            <p>Symbol of adoration, loyalty, and longevity. Follows the sun’s movement.</p>
+        </div>
+
+        <div class="card">
+            <img src="tiger flower.jpg" alt="Tiger Lily" />
+            <h2>Tiger Lily</h2>
+            <p>Also known as Tigridia. Brightly patterned flower symbolizing pride.</p>
+        </div>
+        
+        <div class="card"><img src="CarolinaAllspice.jpg" alt="Carolina Allspice" />
+            <h2>Carolina Allspice</h2>
+            <p>Fragrant and dark-red flower known for its spicy scent and medicinal use.</p>
+        </div>
+
+        <div class="card">
+            <img src="dahlia.jpg" alt="Dahlia" />
+            <h2>Dahlia</h2>
+            <p>Dahlias are vibrant, multi-petaled flowers that stand for elegance and inner strength.</p>
+        </div>
+
+        <div class="card">
+            <img src="dandelions.jpg" alt="Dandelions" />
+            <h2>Dandelions</h2>
+            <p>Often seen as weeds, dandelions represent resilience and the power of wishes..</p>
+        </div>
+        
+        <div class="card"><img src="Apple Blossom.jpg" alt="Apple Blossom" />
+            <h2>Apple Blossom</h2>
+            <p>Delicate and fragrant, apple blossoms symbolize hope and the promise of fruit.</p>
+        </div>
+     
+      </main>
+      
+    </div>
+
+    <footer class="footer">
+      &copy; 2025 Flower Gallery
+    </footer>
+  </div>
+
+</body>
+</html>
+
+   
